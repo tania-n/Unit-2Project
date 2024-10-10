@@ -17,7 +17,7 @@ class Main{
         // Generates a two random numbers 
         int firstRand_num = (int)(Math.random() * (relatives.length() - 1)) + 1; 
         int secondRand_num = (int)(Math.random() * (relatives.length() - 1)) + 1;
-        // Uses the random numbers two create new strings using the relatives' names
+        // Uses the random numbers and the relatives names to create new strings
         String firstR_name = relatives.substring(firstRand_num);
         String secondR_name = relatives2.substring(secondRand_num); 
         // Concatenates the strings to create the Sci-Fi place of origin        
