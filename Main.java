@@ -1,18 +1,29 @@
-class Main{ 
-    public static void main(String[] args) { 
-        // Rename all variables used 
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+      Scanner input = new Scanner(System.in) ;
+      System.out.print("Enter your first name ");
+      String f_name = input.nextLine();
+      System.out.print("Enter your last name ");
+      String l_name = input.nextLine();
+      System.out.print("Enter the city  you or one of your parents were born:  ");
+      String city = input.nextLine();
+      System.out.print("The name of your grammer school ");
+      String school = input.nextLine();
+      System.out.print("Enter the first name of a sibling or other relative ");
+      String relatives = input.nextLine();
+      System.out.print("Enter the second name of a sibling or other relative  ");
+      String relatives2 = input.nextLine();
+  
+    
         
         // Sci-fi first name 
-        String f_name = "Once"; //remove
-        String l_name = "Twice"; //remove
         // Concatenates the first 3 letters of the users first name and the first 2 letters of their last name
         String scifiF_name = f_name.substring(0, 3) + l_name.substring(0, 2); 
         // Makes the first letter of the string uppercase and the rest lowercase 
         scifiF_name = scifiF_name.substring(0, 1).toUpperCase() + scifiF_name.substring(1).toLowerCase();
-        
-        // Sci-fi place of origin 
-        String relatives  = "hello"; //remove
-        String relatives2 = "goodbye"; //remove
+        //Sci-fi last name
+        String scifi_lname = city.substring(0,2) + school.substring(school.length()-3);
         
         // Generates a two random numbers 
         int firstRand_num = (int)(Math.random() * (relatives.length() - 1)) + 1; 
@@ -25,8 +36,11 @@ class Main{
         // Makes the first letter of the string uppercase and the rest lowercase
         scifi_origin = scifi_origin.substring(0, 1).toUpperCase() + scifi_origin.substring(1).toLowerCase();
         
-        System.out.println(scifiF_name); //remove
-        System.out.println(scifi_origin); //remove
+        System.out.println("Hello " + scifiF_name + " " + scifi_lname + " of " + scifi_origin +". Welcome!" ); 
+ 
     
     }
-}
+}      
+
+    
+
