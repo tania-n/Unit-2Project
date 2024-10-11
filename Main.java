@@ -1,6 +1,8 @@
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
+      System.out.print("If you provide me some information I willl provide a Science Fiction name for you.")
+      System.out.print("Please have all responses be at least three characters long.")
       // Asks the user to input information that will be used later on 
       Scanner input = new Scanner(System.in) ;
       System.out.print("Enter your first name: ");
